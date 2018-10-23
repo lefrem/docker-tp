@@ -18,6 +18,8 @@ services:
       - PHP_EXTENSIONS=pdo_mysql
     ports:
       - 30000:80
+    volumes: 
+      - './sources:/home/user/sources'
 
   adminer:
     image: adminer
